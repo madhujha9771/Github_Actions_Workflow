@@ -1,0 +1,14 @@
+# What is the goal of workflow
+#
+name: Auto_linter
+on: 
+  push:
+    paths: "*.py"
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    # This step will  automatically clone the code
+    steps:
+      - name: checkout/clone the code
+        uses: actions/checkout@v4
+    
