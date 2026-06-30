@@ -10,5 +10,5 @@ jobs:
     # This step will  automatically clone the code
     steps:
       - name: checkout/clone the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
     
