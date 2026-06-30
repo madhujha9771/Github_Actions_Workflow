@@ -3,14 +3,14 @@
 name: Auto_linter
 on: 
   push:
-    paths: "*.py"
+    paths: "**/*.py"
 jobs:
   code:
     runs-on: ubuntu-latest
     # This step will  automatically clone the code
     steps:
       - name: checkout/clone the code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
       - name: Install python linter
         run: pip install ruff
       - name: Check the syntax intendation using ruff linter
